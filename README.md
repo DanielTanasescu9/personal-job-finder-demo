@@ -188,22 +188,20 @@ Issues and suggestions about the **public demo**—its usability, accessibility,
 
 The production job finder is maintained separately. Do not submit private candidate data, job history, credentials, model weights, or proprietary production scraper/orchestrator implementations to this repository. Public source code can be copied; frontend hiding, minification, or feature flags do not make shipped code private.
 
+---
+
 ## © Copyright and License
 
-Copyright © 2026 Daniel Tanasescu (@DanielTanasescu9). All rights reserved.
+Copyright © 2026 Daniel Tanasescu (@DanielTanasescu9).
 
-Personal Job Finder — Public Demo is a proprietary demonstration
-project and is not released under an open-source license.
+Personal Job Finder — Public Demo is an open-source project
+released under the MIT License.
 
-No general permission is granted to copy, modify, redistribute,
-or commercially use this project's code, except as permitted by
-applicable law, GitHub's Terms of Service, or prior written permission
-from the copyright holder.
+You are free to use, copy, modify, distribute, and use this software
+commercially, provided you include the original copyright notice
+and the full license text.
 
-The production application, private scraper implementations, and
-proprietary orchestration logic are maintained separately.
-
-See [LICENSE.md](LICENSE.md) for the full terms.
+See [LICENSE](LICENSE) for the complete license terms.
 
 GitHub profile: https://github.com/DanielTanasescu9
 
