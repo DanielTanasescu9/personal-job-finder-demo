@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} · Personal Job Finder Public Demo</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script defer src="/static/app.js"></script>
+</head>
+<body data-page="{{PAGE}}">
+  <header class="app-header">
+    <a class="brand" href="/"><span class="brand-mark">JF</span><span><strong>Personal Job Finder</strong><small>PUBLIC DEMO · simulated services only</small></span></a>
+    <div class="header-meta"><span class="local-pill"><span></span> Demo running locally</span><a href="/download.csv" class="button button-light">Export CSV</a></div>
+  </header>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <div class="nav-label">WORKSPACE</div>
+      <a href="/" data-nav="dashboard"><span>▦</span> Overview</a>
+      <a href="/search" data-nav="search"><span>⌕</span> Web search</a>
+      <a href="/jobs" data-nav="jobs"><span>▤</span> Job tracker</a>
+      <a href="/profile" data-nav="profile"><span>◉</span> CV & profile</a>
+      <a href="/models" data-nav="models"><span>▣</span> Model manager</a>
+      <div class="nav-label nav-label-gap">SYSTEM</div>
+      <a href="/sources" data-nav="sources"><span>⇄</span> Source health</a>
+      <a href="/settings" data-nav="settings"><span>⚙</span> Settings</a>
+      <div class="sidebar-bottom"><div class="privacy-card"><strong>DEMO MODE</strong><p>No real jobs are fetched. No CV file is read or uploaded. Search, scrapers, orchestrator, model selection and service checks are simulations.</p></div><div class="build-version">Personal Job Finder · Public Demo 0.1</div></div>
+    </aside>
+    <main class="main-content"><div class="notice notice-info demo-ribbon"><strong>PUBLIC DEMO ONLY</strong> All postings are fictional, links are disabled, and scraping/web search/AI/model loading are mocked. Do not treat results or service status as real.</div>
+      <div class="page-heading"><div><div class="eyebrow">PERSONAL JOB WORKSPACE</div><h1>{{HEADING}}</h1><p>{{SUBTITLE}}</p></div><div id="pageHeadingAction">{{ACTION}}</div></div>
+      <div id="globalNotice" class="notice hidden" role="status" aria-live="polite"></div>
+      {{CONTENT}}
+      <footer>Public demo · Sample scores and postings are invented. There are no live vacancies or application links.</footer>
+    </main>
+  </div>
+</body>
+</html>

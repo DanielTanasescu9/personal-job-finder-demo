@@ -1,0 +1,8 @@
+<section class="panel panel-toolbar"><div class="filter-grid">
+  <div class="field field-search"><label for="jobFilter">Search saved jobs</label><input id="jobFilter" placeholder="Title, company, location, skill…"></div>
+  <div class="field"><label for="jobStatusFilter">Application status</label><select id="jobStatusFilter"><option value="all">All statuses</option><option>New</option><option>Saved</option><option>Applied</option><option>Not relevant</option></select></div>
+  <div class="field"><label for="jobMinScore">Minimum match</label><select id="jobMinScore"><option value="0">Any score</option><option value="40">40+</option><option value="60">60+</option><option value="75">75+</option></select></div>
+  <div class="field"><label for="jobSort">Sort by</label><select id="jobSort"><option value="score">Best overall relevance</option><option value="date">Recently collected</option><option value="company">Company</option></select></div>
+</div><div class="toolbar-bottom"><span id="jobCount" class="muted">Loading jobs…</span><div class="button-row"><button type="button" class="button button-secondary" id="refreshJobs">Refresh</button><a href="/download.csv" class="button button-secondary">Download demo CSV</a><button type="button" class="button button-danger" id="deleteHiddenJobs">Delete “Not relevant” jobs</button></div></div></section>
+<section id="jobList" class="job-grid"><div class="loading-state">Loading jobs…</div></section>
+<div id="jobsPagination" class="pagination"><button type="button" class="button button-secondary" id="jobsPrev">← Previous</button><span id="jobsPageLabel">Page 1</span><button type="button" class="button button-secondary" id="jobsNext">Next →</button></div>

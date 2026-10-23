@@ -206,6 +206,7 @@ proprietary orchestration logic are maintained separately.
 See [LICENSE.md](LICENSE.md) for the full terms.
 
 GitHub profile: https://github.com/DanielTanasescu9
+
 ---
 
 <div align="center">

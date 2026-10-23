@@ -1,0 +1,34 @@
+<section class="panel">
+  <div class="section-heading"><div><h2>Example hardware panel</h2><p>Hardware readings are fictitious placeholders; this demo does not inspect your computer.</p></div><span class="status-pill" id="hardwareStatusBadge">Demo only</span></div>
+  <div id="hardwareSummary" class="runtime-summary"><div class="empty-state">Resource information will appear when the page loads.</div></div>
+  <div class="notice notice-info"><strong>DEMO ONLY — no runtime is available.</strong> Model cards and activation states are simulated. The demo does not inspect local files, start Docker, access a GPU, or load model weights.</div>
+</section>
+
+<section class="panel">
+  <div class="section-heading">
+    <div><h2>Example model cards</h2><p>These are fictional cards for the UI preview. The demo never scans real folders or reads model metadata.</p></div>
+    <span class="status-pill" id="modelScanBadge">Not scanned</span>
+  </div>
+  <div class="form-grid">
+    <div class="field field-span-2"><label for="modelRoots">Example model folder paths (not used)</label><textarea id="modelRoots" rows="3" spellcheck="false" placeholder="Demo only — no path required"></textarea><small>This field is purely illustrative and its value is not used or sent to any model service.</small></div>
+    <div class="form-actions"><button type="button" class="button" id="scanModelsButton">Show demo model cards</button><span class="form-status" id="modelScanMessage" role="status"></span></div>
+  </div>
+  <div class="notice notice-info"><strong>Compatibility panel (example only).</strong> No model runtime or file-format adapter is shipped in the public demo.</div>
+  <div id="modelList" class="model-list"><div class="empty-state">Click “Show demo model cards” to display fictional examples. No local files are read.</div></div>
+</section>
+
+<section class="panel">
+  <div class="section-heading"><div><h2>Simulated model activation</h2><p>Select a fictional card to preview the interaction. Activation never starts a runtime or examines your machine.</p></div><span class="status-pill" id="modelRuntimeBadge">Not checked</span></div>
+  <div id="selectedModelCard" class="runtime-summary"><div class="empty-state">No demo model selected yet.</div></div>
+  <div class="button-row"><button type="button" class="button" id="activateModelButton" disabled>Simulate activation</button><button type="button" class="button button-secondary" id="refreshModelRuntimeButton">Simulate health check</button><button type="button" class="button button-danger" id="stopModelButton">Reset demo state</button></div>
+  <div id="modelActivationMessage" class="service-detail" role="status" aria-live="polite">No model process will be started.</div>
+  <pre id="modelActivationLog" class="runtime-log hidden"></pre>
+</section>
+
+<section class="panel">
+  <div class="section-heading"><div><h2>Architecture extension points</h2><p>Production runtime implementation is intentionally not included in this repository.</p></div></div>
+  <div class="content-grid model-runtime-grid">
+    <div><h3>GGUF runtime adapter (not included)</h3><p>A future private adapter can implement this interface. This demo performs no GGUF inference.</p></div>
+    <div><h3>Safetensors runtime adapter (not included)</h3><p>A future private adapter can implement this interface. This demo performs no Safetensors inference.</p></div>
+  </div>
+</section>

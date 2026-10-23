@@ -1,0 +1,8 @@
+{
+  "mode": "public-demo",
+  "host": "127.0.0.1",
+  "port": 7860,
+  "real_scrapers_enabled": false,
+  "real_web_search_enabled": false,
+  "real_model_inference_enabled": false
+}
